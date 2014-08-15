@@ -5,7 +5,7 @@
 #                                                  #
 #       INTOROBOT PLATFORM                         #
 #       AUTOBAHN SERVER                            #
-#                                                  #
+#            Github                                #
 #################################################### 
 
 from autobahnDB import * #interface of postgreSQL 
