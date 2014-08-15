@@ -454,8 +454,8 @@ class IntorobotServerFactory(WebSocketServerFactory):
                 self.videoFrontClients[feed_id]=client
                 logger.info("registered videoFrontClient,feed_id=%s,total videoUser NUM: %d ",feed_id,len(self.videoFrontClients)) 
         else:
+            logger.warn("canot register a Unkown Format %s",format)
             return self.protocol.failHandshake("Unkown format!") 
-        logger.warn("canot register a Unkown Format %s",format)
 
 
 

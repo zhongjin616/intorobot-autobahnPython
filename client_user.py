@@ -69,8 +69,9 @@ if __name__ == '__main__':
 
    debug = True
 
-   factory =  WebSocketClientFactory('ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
-   #factory =  WebSocketClientFactory('ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
+   #factory =  WebSocketClientFactory('ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
+   #factory =  WebSocketClientFactory('ws://162.243.154.223:8888/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
+   factory =  WebSocketClientFactory('ws://143.89.46.81:8888/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
                                     debug = debug,
                                     debugCodePaths = debug)
 
