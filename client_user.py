@@ -1,4 +1,4 @@
-#############################################################################
+###############################################################################
 ##
 ##  Copyright (C) 2013 molmc
 ##
@@ -7,6 +7,7 @@
 
 import sys
 import json
+import dbus
 from twisted.internet import reactor
 from twisted.python import log
 
@@ -64,18 +65,44 @@ class EchoClientProtocol(WebSocketClientProtocol):
    def onClose(self,wasClean, code, reason):
        self.sendClose()  
 
+class EchoClientVideoProtocol(WebSocketClientProtocol):
+
+   def onConnect(self, response):
+      pass
+      #print(response)
+     
+   def onOpen(self):
+      print "websocket established, wait for robot video..."
+
+      
+   def onMessage(self,payload,isBinary):
+        print "onMessage() receive video from robot "
+   
+   def onClose(self,wasClean, code, reason):
+        self.sendClose() 
+
+
+
+
 
 if __name__ == '__main__':
-
-   debug = True
-
-   #factory =  WebSocketClientFactory('ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
-   #factory =  WebSocketClientFactory('ws://162.243.154.223:8888/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
-   factory =  WebSocketClientFactory('ws://143.89.46.81:8888/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
+   
+    debug = True
+    
+    #factory=WebSocketClientFactory( 'ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
+    #factory=WebSocketClientFactory( 'ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
+    factory=WebSocketClientFactory( 'ws://143.89.46.81:8888/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=True',
                                     debug = debug,
                                     debugCodePaths = debug)
-
-   factory.protocol = EchoClientProtocol
-   connectWS(factory)
-
-   reactor.run()
+    factory.protocol = EchoClientProtocol
+    
+    
+    #factoryVideo=WebSocketClientFactory('ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=video&isFront=False',
+    #factoryVideo=WebSocketClientFactory('ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=video&isFront=False',
+    factoryVideo=WebSocketClientFactory('ws://143.89.46.81:8888/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=video&isFront=True',
+                                    debug = debug,
+                                    debugCodePaths = debug)
+    factoryVideo.protocol = EchoClientVideoProtocol
+    connectWS(factory)
+    connectWS(factoryVideo)
+    reactor.run()

@@ -502,7 +502,6 @@ class IntorobotServerFactory(WebSocketServerFactory):
         reactor.stop() 
 
 
-import sys
 import argparse
 if __name__=='__main__':
 
