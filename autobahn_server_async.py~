@@ -8,7 +8,7 @@
 #            Github                                #
 #################################################### 
 
-from autobahnDB import * #interface of postgreSQL 
+from async_autobahnDB import * #interface of postgreSQL 
 from twisted.internet import reactor
 from autobahn.twisted.websocket import WebSocketServerFactory,\
         WebSocketServerProtocol,\
@@ -31,15 +31,14 @@ try:
 except:
     autobahnIP = get_ip('eth1') 
 
-db = autobahnDB("f2",host="localhost",user="f2",passwd="123") 
-#db = autobahnDB("molmcdb",host="localhost",user="postgres",passwd="123") 
+db = aysn_autobahnDB(moudle = "psycopg2", database = "f2",host="localhost",user="f2",password="123") 
+#db = autobahnDB(moudle = "psycopg2", database = "molmcdb",host="localhost",user="postgres",password="123") 
 #db = autobahnDB("exampledb",host="localhost",user="dbuser",passwd="dbuser") 
 #db = autobahnDB("molmcdb",host="localhost",user="molmc",passwd="molmc") 
 
 import time
 import json 
-import logging
-import binascii 
+import logging 
 
 
 ###define custom protocol to handle websocket data 
@@ -75,6 +74,7 @@ class IntorobotServerProtocol(WebSocketServerProtocol):
         logger.debug("onOpen() called,welcome aboard! checking... feed_id=%s,format=%s,isFront=%s",self.feed_id,self.format,self.isFront) 
 
     def storeJsonStreams(self,data):
+        logger.debug("twisted.enterprise.adbapi store a jsonStreams %s ",self.feed_id)
         if data.has_key("resource"):
             tup = data["resource"].split("/") 
             feed_id = tup[-2] 
@@ -85,36 +85,34 @@ class IntorobotServerProtocol(WebSocketServerProtocol):
                 element = data[dataORcommand][i] 
                 timestamp = time.gmtime(element["current_value"]["timestamp"])
                 timestamp = time.strftime("%d-%b-%Y %H:%M:%S",timestamp) 
+                if data.has_key("token"): 
+                    string = '''{"token": "%s"}'''%(str(data["token"]))
+                    self.sendMessage(string) 
                 if element["id"] == "d_image": 
                     image = buffer(str(element["current_value"]["value"]))
-                    db.insert_image("'%s'"%feed_id,"TIMESTAMP '%s'"%timestamp,image) 
+                    return db.insert_image("'%s'"%feed_id,"TIMESTAMP '%s'"%timestamp,image) 
                 else: 
                     fields = ["feed_id","stream_id","updated_at","current_value"] 
                     values = ["'%s'"%feed_id,"'%s'"%element["id"],"TIMESTAMP '%s'"%timestamp,element["current_value"]["value"]] 
-                    db.insert_point("robot_%s"%dataORcommand,fields,values) 
-            if data.has_key("token"): 
-                string = '''{"token": "%s"}'''%(str(data["token"]))
-                self.sendMessage(string) 
-            logger.debug("postgreSQL store a jsonStreams %s ",self.feed_id)
+                    return db.insert_point("robot_%s"%dataORcommand,fields,values) 
 
     def storeLargeObject(self,payload):
         timestamp = "'now'" 
         video = payload 
         #video = buffer(payload) 
-        db.insert_video("'%s'"%self.feed_id,timestamp,video) 
+        logger.debug("twisted.enterprise.adbapi store a video from %s",self.feed_id) 
+        return db.insert_video("'%s'"%self.feed_id,timestamp,video) 
         '''
         hd = file("video.mp4","ab")
         hd.write(payload) 
         hd.close() 
         '''
-        logger.debug("postgreSQL store a video from %s",self.feed_id) 
-    
-    def onMessage(self,payload,isBinary):
-        logger.debug("onMessage() called from feed_id=%s",self.feed_id) 
-        if self.format=="video" and self.isFront=="false": 
-            #self.storeLargeObject(payload)
-            print "first 4 bytes:{}".format(binascii.hexlify(payload[0:4]))
 
+    def onMessage(self,payload,isBinary):
+        #logger.debug("onMessage() called from feed_id=%s",self.feed_id) 
+        if self.format=="video" and self.isFront=="false": 
+            #self.storeLargeObject(payload) 
+			print "first 4 bytes:{}".format(binascii.hexlify(payload[0:4]))
             if self.feed_id in self.factory.videoFrontClients.keys():  
                 self.factory.relayVideo(self.feed_id,payload) 
         elif self.format=="json": 
@@ -122,18 +120,18 @@ class IntorobotServerProtocol(WebSocketServerProtocol):
             if data.has_key("method"):
                 pass
             else:
-                self.storeJsonStreams(data) 
                 if self.isFront=="false":
-                    logger.debug("autobahn received a datastream: %s ",data)
+                    #logger.debug("autobahn received a datastream: %s ",data)
                     self.factory.relayDataJson(self.feed_id,payload) 
                 else:
-                    logger.debug("autobahn received a commandstream: %s ",data)
+                    #logger.debug("autobahn received a commandstream: %s ",data)
                     self.factory.relayCommandJson(self.feed_id,payload)
+                return self.storeJsonStreams(data) 
 
     def connectionLost(self,reason): 
         #logger.debug("connectionLost() called for reason: ",reason)
         WebSocketServerProtocol.connectionLost(self,reason) 
-        self.factory.unregister(self,self.feed_id,self.format,self.isFront) 
+        self.factory.unregister(self.feed_id,self.format,self.isFront) 
         
     def processHandshake(self):
       '''
@@ -582,6 +580,6 @@ if __name__=='__main__':
     factory.setProtocolOptions(allowHixie76 = True) 
     listenWS(factory) 
 
-    reactor.addSystemEventTrigger('before','shutdown',factory.closeAllWebsocket)  
+    reactor.addSystemEventTrigger('before','shutdown',factory.closeAllWebsocket) 
     reactor.run() 
     

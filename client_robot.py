@@ -183,6 +183,8 @@ videostream = """{
         "token": "0x76589"
     }""".encode('UTF-8')
 
+
+import time
 class EchoClientProtocol(WebSocketClientProtocol):
 
    def onConnect(self, response):
@@ -202,7 +204,8 @@ class EchoClientProtocol(WebSocketClientProtocol):
       self.sendRobotInformation()
       reactor.callLater(3, self.sendDatastream)
       
-   def onMessage(self,payload,isBinary):
+   def onMessage(self,payload,isBinary): 
+      print str(time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time())))  
       data = json.loads(payload)
       if data.has_key("commandstreams"):
         left_speed = data["commandstreams"][0]["current_value"]["value"]
@@ -255,16 +258,20 @@ if __name__ == '__main__':
    
     debug = True
     
-    factory=WebSocketClientFactory( 'ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
+    #factory=WebSocketClientFactory( 'ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
+    #factory=WebSocketClientFactory( 'ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
+    factory=WebSocketClientFactory( 'ws://143.89.46.81:9090/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
                                     debug = debug,
                                     debugCodePaths = debug)
     factory.protocol = EchoClientProtocol
     
     
-    factoryVideo=WebSocketClientFactory( 'ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=json&isFront=False',
+    #factoryVideo=WebSocketClientFactory('ws://162.243.154.223:8888/v1/websocket/feed_id=53dde5e6a52633d704000003&format=video&isFront=False',
+    #factoryVideo=WebSocketClientFactory('ws://192.168.1.37:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=video&isFront=False',
+    factoryVideo=WebSocketClientFactory('ws://143.89.46.81:9000/v1/websocket/?feed_id=53dde5e6a52633d704000003&format=video&isFront=False',
                                     debug = debug,
                                     debugCodePaths = debug)
     factoryVideo.protocol = EchoClientVideoProtocol
     connectWS(factory)
-    connectWS(factoryVideo)
+    #connectWS(factoryVideo)
     reactor.run()
