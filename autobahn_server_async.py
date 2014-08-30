@@ -8,7 +8,7 @@
 #            Github                                #
 #################################################### 
 
-from autobahnDB import * #interface of postgreSQL 
+from async_autobahnDB import * #interface of postgreSQL 
 from twisted.internet import reactor
 from autobahn.twisted.websocket import WebSocketServerFactory,\
         WebSocketServerProtocol,\
@@ -31,15 +31,14 @@ try:
 except:
     autobahnIP = get_ip('eth1') 
 
-db = autobahnDB("f2",host="localhost",user="f2",passwd="123") 
-#db = autobahnDB("molmcdb",host="localhost",user="postgres",passwd="123") 
+db = aysn_autobahnDB(moudle = "psycopg2", database = "f2",host="localhost",user="f2",password="123") 
+#db = autobahnDB(moudle = "psycopg2", database = "molmcdb",host="localhost",user="postgres",password="123") 
 #db = autobahnDB("exampledb",host="localhost",user="dbuser",passwd="dbuser") 
 #db = autobahnDB("molmcdb",host="localhost",user="molmc",passwd="molmc") 
 
 import time
 import json 
-import logging
-import binascii 
+import logging 
 
 
 ###define custom protocol to handle websocket data 
@@ -75,6 +74,7 @@ class IntorobotServerProtocol(WebSocketServerProtocol):
         logger.debug("onOpen() called,welcome aboard! checking... feed_id=%s,format=%s,isFront=%s",self.feed_id,self.format,self.isFront) 
 
     def storeJsonStreams(self,data):
+        logger.debug("twisted.enterprise.adbapi store a jsonStreams %s ",self.feed_id)
         if data.has_key("resource"):
             tup = data["resource"].split("/") 
             feed_id = tup[-2] 
@@ -85,35 +85,33 @@ class IntorobotServerProtocol(WebSocketServerProtocol):
                 element = data[dataORcommand][i] 
                 timestamp = time.gmtime(element["current_value"]["timestamp"])
                 timestamp = time.strftime("%d-%b-%Y %H:%M:%S",timestamp) 
+                if data.has_key("token"): 
+                    string = '''{"token": "%s"}'''%(str(data["token"]))
+                    self.sendMessage(string) 
                 if element["id"] == "d_image": 
                     image = buffer(str(element["current_value"]["value"]))
-                    db.insert_image("'%s'"%feed_id,"TIMESTAMP '%s'"%timestamp,image) 
+                    return db.insert_image("'%s'"%feed_id,"TIMESTAMP '%s'"%timestamp,image) 
                 else: 
                     fields = ["feed_id","stream_id","updated_at","current_value"] 
                     values = ["'%s'"%feed_id,"'%s'"%element["id"],"TIMESTAMP '%s'"%timestamp,element["current_value"]["value"]] 
-                    db.insert_point("robot_%s"%dataORcommand,fields,values) 
-            if data.has_key("token"): 
-                string = '''{"token": "%s"}'''%(str(data["token"]))
-                self.sendMessage(string) 
-            logger.debug("postgreSQL store a jsonStreams %s ",self.feed_id)
+                    return db.insert_point("robot_%s"%dataORcommand,fields,values) 
 
     def storeLargeObject(self,payload):
         timestamp = "'now'" 
         video = payload 
         #video = buffer(payload) 
-        db.insert_video("'%s'"%self.feed_id,timestamp,video) 
+        logger.debug("twisted.enterprise.adbapi store a video from %s",self.feed_id) 
+        return db.insert_video("'%s'"%self.feed_id,timestamp,video) 
         '''
         hd = file("video.mp4","ab")
         hd.write(payload) 
         hd.close() 
         '''
-        logger.debug("postgreSQL store a video from %s",self.feed_id) 
-    
+
     def onMessage(self,payload,isBinary):
-        logger.debug("onMessage() called from feed_id=%s",self.feed_id) 
+        #logger.debug("onMessage() called from feed_id=%s",self.feed_id) 
         if self.format=="video" and self.isFront=="false": 
-            #self.storeLargeObject(payload)
-            print "first 4 bytes:{}".format(binascii.hexlify(payload[0:4]))
+            self.storeLargeObject(payload) 
 
             if self.feed_id in self.factory.videoFrontClients.keys():  
                 self.factory.relayVideo(self.feed_id,payload) 
@@ -122,18 +120,18 @@ class IntorobotServerProtocol(WebSocketServerProtocol):
             if data.has_key("method"):
                 pass
             else:
-                self.storeJsonStreams(data) 
                 if self.isFront=="false":
-                    logger.debug("autobahn received a datastream: %s ",data)
+                    #logger.debug("autobahn received a datastream: %s ",data)
                     self.factory.relayDataJson(self.feed_id,payload) 
                 else:
-                    logger.debug("autobahn received a commandstream: %s ",data)
+                    #logger.debug("autobahn received a commandstream: %s ",data)
                     self.factory.relayCommandJson(self.feed_id,payload)
+                return self.storeJsonStreams(data) 
 
     def connectionLost(self,reason): 
         #logger.debug("connectionLost() called for reason: ",reason)
         WebSocketServerProtocol.connectionLost(self,reason) 
-        self.factory.unregister(self,self.feed_id,self.format,self.isFront) 
+        self.factory.unregister(self.feed_id,self.format,self.isFront) 
         
     def processHandshake(self):
       '''
@@ -461,20 +459,16 @@ class IntorobotServerFactory(WebSocketServerFactory):
                 self.jsonBackClients[feed_id]=client 
                 self.r.hsetnx(feed_id,'autobahnIP',autobahnIP) 
                 logger.info("registered jsonRobot,feed_id=%s,total jsonRobot NUM: %d ",feed_id,len(self.jsonBackClients)) 
-            elif isFront=="true":
-                if feed_id not in self.jsonFrontClients.keys():
-                    self.jsonFrontClients[feed_id]=[] 
-                self.jsonFrontClients[feed_id].extend(client)  
+            elif isFront=="true" and feed_id not in self.jsonFrontClients.keys(): 
+                self.jsonFrontClients[feed_id]=client 
                 logger.info("registered jsonUser,feed_id=%s,total jsonUser NUM: %d ",feed_id,len(self.jsonFrontClients)) 
         elif format=="video":
             if isFront=="false" and feed_id not in self.videoBackClients.keys(): 
                 self.videoBackClients[feed_id]=client
                 self.r.hsetnx(feed_id,'autobahnIP',autobahnIP) 
                 logger.info("registered videoRobot,feed_id=%s,total videoRobot NUM: %d ",feed_id,len(self.videoBackClients)) 
-            elif isFront=="true":
-                if feed_id not in self.videoFrontClients.keys():
-                    self.videoFrontClients[feed_id]=[]
-                self.videoFrontClients[feed_id].extend(client) 
+            elif isFront=="true" and feed_id not in self.videoFrontClients.keys():
+                self.videoFrontClients[feed_id]=client
                 logger.info("registered videoUser,feed_id=%s,total videoUser NUM: %d ",feed_id,len(self.videoFrontClients)) 
         else:
             logger.warn("canot register a Unkown Format %s",format)
@@ -482,18 +476,15 @@ class IntorobotServerFactory(WebSocketServerFactory):
 
 
 
-    def unregister(self,client,feed_id,format,isFront):
+    def unregister(self,feed_id,format,isFront):
         if format=="json":
             if isFront=="false" and feed_id in self.jsonBackClients.keys(): 
                 del self.jsonBackClients[feed_id] 
                 if feed_id not in self.videoBackClients:
                     self.r.delete(feed_id) 
                 logger.info("unregistered jsonRobot,feed_id=%s",feed_id) 
-            elif isFront=="true":
-                if len(self.jsonFrontClients[feed_id])==1: 
-                    del self.jsonFrontClients[feed_id] 
-                else:
-                    self.jsonFrontClients[feed_id].remove(client)  
+            elif isFront=="true" and feed_id in self.jsonFrontClients.keys(): 
+                del self.jsonFrontClients[feed_id] 
                 logger.info("unregisted jsonUser,feed_id=%s",feed_id) 
         elif format=="video":
             if isFront=="false" and feed_id in self.videoBackClients.keys(): 
@@ -501,26 +492,19 @@ class IntorobotServerFactory(WebSocketServerFactory):
                 if feed_id not in self.jsonBackClients:
                     self.r.delete(feed_id) 
                 logger.info("unregistered VideoRobot,feed_id=%s",feed_id) 
-            elif isFront=="true":
-                if len(self.videoFrontClients[feed_id])==1:
-                    del self.videoFrontClients[feed_id]
-                else:
-                    self.videoFrontClients[feed_id].remove(client) 
+            elif isFront=="true" and feed_id in self.videoFrontClients.keys():
+                del self.videoFrontClients[feed_id]
                 logger.info("unregistered VideoUser,feed_id=%s",feed_id) 
 
     def relayVideo(self,feed_id,payload): 
         if self.videoFrontClients.has_key(feed_id):
-            preparedMessage = self.prepareMessage(payload,isBinary=True) 
-            for client in self.videoFrontClients[feed_id]:
-                client.sendPreparedMessage(preparedMessage)  
             logger.debug("relay video to %s",feed_id) 
+            self.videoFrontClients[feed_id].sendMessage(payload,True) 
         
     def relayDataJson(self,feed_id,payload):
         if self.jsonFrontClients.has_key(feed_id): 
-            preparedMessage = self.prepareMessage(payload,isBinary=False) 
-            for client in self.jsonFrontClients[feed_id]:
-                client.sendPreparedMessage(preparedMessage)  
             logger.debug("relay data to %s",feed_id) 
+            self.jsonFrontClients[feed_id].sendMessage(payload,False) 
     
     def relayCommandJson(self,feed_id,payload): 
         if self.jsonBackClients.has_key(feed_id): 
@@ -529,16 +513,14 @@ class IntorobotServerFactory(WebSocketServerFactory):
 
     def closeAllWebsocket(self):
         for (k,client) in self.jsonBackClients.items(): 
-            client.sendClose()  
-        for (k,client) in self.jsonFrontClients.items():
-            for i in range(len(client)):
-                client[i].sendClose() 
+            client.loseConnection()  
+        for (k,client) in self.jsonFrontClients.items(): 
+            client.loseConnection() 
         for (k,client) in self.videoBackClients.items(): 
-            client.sendClose() 
-        for (k,client) in self.videoFrontClients.items():
-            for i in range(len(client)):
-                client[i].sendClose() 
-        self.stopFactory()  
+            client.loseConnection() 
+        for (k,client) in self.videoFrontClients.items(): 
+            client.loseConnection() 
+        reactor.stop() 
 
 
 import argparse 
@@ -582,6 +564,6 @@ if __name__=='__main__':
     factory.setProtocolOptions(allowHixie76 = True) 
     listenWS(factory) 
 
-    reactor.addSystemEventTrigger('before','shutdown',factory.closeAllWebsocket)  
+    #reactor.addSystemEventTrigger('before','shutdown',factory.closeAllWebsocket) 
     reactor.run() 
     

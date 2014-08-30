@@ -1,0 +1,785 @@
+2014-08-28 10:19:09,779-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "L0b5bOQ1ydlxpa64SKUFiw==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["True"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["json"]}, "extensions": [], "peer": "192.168.1.37:44751", "path": "/v1/websocket/", "protocols": []}
+2014-08-28 10:19:09,780-autobahn9000:-INFO: registered jsonUser,feed_id=53dde5e6a52633d704000003,total jsonUser NUM: 1 
+2014-08-28 10:19:09,780-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=json,isFront=true
+2014-08-28 10:19:11,784-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:11,884-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:11,985-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,086-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,186-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,287-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,387-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,488-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,589-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,689-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,790-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,891-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:12,991-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,092-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,193-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,293-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,394-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,494-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,595-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,696-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,796-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,897-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:13,998-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,098-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,200-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,299-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,400-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,501-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,601-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,702-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,803-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:14,904-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,004-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,104-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,205-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,306-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,407-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,507-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,608-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,708-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,809-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:15,910-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,010-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,111-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,211-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,312-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,412-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,513-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,614-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,714-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,815-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:16,915-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,016-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,117-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,217-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,318-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,418-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,519-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,619-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,720-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,820-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:17,921-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,021-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,122-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,222-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,323-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,423-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,524-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,625-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,725-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,826-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:18,927-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,027-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,127-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,228-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,329-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,430-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,530-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,631-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,732-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,833-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:19,934-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,034-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,134-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,235-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,336-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,437-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,537-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,638-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,738-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,839-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:20,939-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,040-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,140-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,241-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,341-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,442-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,543-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,643-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,744-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,845-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:21,945-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,046-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,146-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,247-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,348-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,449-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,549-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,649-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,750-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,850-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:22,951-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,052-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,152-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,253-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,354-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,454-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,555-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,656-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,756-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,856-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:23,957-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,058-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,159-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,260-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,360-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,460-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,561-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,661-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,762-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,862-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:24,963-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,063-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,164-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,265-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,365-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,466-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,566-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,667-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,768-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,868-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:25,969-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:19:26,026-autobahn9000:-INFO: unregisted jsonUser,feed_id=53dde5e6a52633d704000003
+2014-08-28 10:20:24,499-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "QSWSzhXCf5DWjtgsUhtm9w==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["True"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["json"]}, "extensions": [], "peer": "192.168.1.37:44757", "path": "/v1/websocket/", "protocols": []}
+2014-08-28 10:20:24,500-autobahn9000:-INFO: registered jsonUser,feed_id=53dde5e6a52633d704000003,total jsonUser NUM: 1 
+2014-08-28 10:20:24,501-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=json,isFront=true
+2014-08-28 10:20:26,505-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:26,606-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:26,706-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:26,807-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:26,907-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,008-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,108-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,209-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,309-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,410-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,510-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,612-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,712-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,813-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:27,913-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,014-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,114-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,215-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,315-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,416-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,517-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,617-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,718-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,818-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:28,919-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,019-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,120-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,220-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,322-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,422-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,522-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,623-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,724-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,825-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:29,925-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,026-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,126-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,227-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,328-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,428-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,529-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,629-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,730-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,831-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:30,931-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,032-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,132-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,233-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,334-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,434-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,535-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,635-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,736-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,837-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:31,937-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,038-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,138-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,240-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,340-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,441-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,541-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,641-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,742-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,843-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:32,944-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,044-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,145-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,245-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,346-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,447-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,547-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,647-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,748-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,849-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:33,950-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,050-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,150-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,251-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,351-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,452-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,553-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,653-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,754-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,855-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:34,955-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,056-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,156-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,257-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,358-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,458-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,558-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,659-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,760-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,860-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:35,961-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,061-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,162-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,263-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,363-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,464-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,564-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,665-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,765-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,866-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:36,967-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,067-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,168-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,268-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,369-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,469-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,570-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,671-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,771-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,872-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:37,972-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,073-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,173-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,274-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,375-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,475-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,576-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,677-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,789-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,878-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:38,979-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:39,080-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:39,180-autobahn9000:-DEBUG: twisted.enterprise.adbapi store a jsonStreams 53dde5e6a52633d704000003 
+2014-08-28 10:20:39,269-autobahn9000:-INFO: unregisted jsonUser,feed_id=53dde5e6a52633d704000003
+2014-08-30 09:15:36,380-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "4GNed2C/U1U2UJR6cU3vwQ==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:58067", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 09:17:29,493-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "ROVojysQSryD9MVpwvKURg==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:58073", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 09:17:29,495-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 09:17:29,496-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 09:17:31,501-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:31,602-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:31,704-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:31,806-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:31,907-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,008-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,110-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,211-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,313-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,414-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,515-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,617-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,718-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,820-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:32,921-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,023-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,124-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,225-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,327-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,428-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,529-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,631-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,732-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,834-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:33,935-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,037-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,138-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,240-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,341-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,443-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,544-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,647-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,748-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,849-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:34,950-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,052-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,153-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,254-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,356-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,457-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,559-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,660-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,761-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,863-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:35,964-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,065-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,167-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,268-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,369-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,471-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,572-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,674-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,775-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,876-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:36,978-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,079-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,180-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,282-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,383-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,485-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,586-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,687-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,789-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,890-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:37,991-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,093-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,194-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,295-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,397-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,498-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,600-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,701-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,802-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:38,903-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,005-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,106-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,207-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,309-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,410-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,512-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,613-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,714-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,816-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:39,917-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,018-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,120-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,221-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,322-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,424-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,525-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,627-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,728-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,830-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:40,931-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,032-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,134-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,235-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,336-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,438-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,539-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,640-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,742-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,843-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:41,944-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,046-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,147-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,249-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,350-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,452-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,553-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,655-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,756-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,857-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:42,959-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,060-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,162-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,263-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,364-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,466-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,567-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,668-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,770-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,871-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:43,972-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,074-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,175-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,276-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,377-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,479-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,580-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,682-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,783-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,884-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:44,986-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,087-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,188-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,290-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,391-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,492-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,594-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,695-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,797-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,898-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:17:45,915-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 09:22:04,517-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "jTSwAq3o+EQmnc2oJb7bcQ==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:58578", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 09:22:04,519-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 09:22:04,519-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 09:22:06,524-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:22:06,564-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:19,536-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "rC7xPEla5hxERfPmR+g64w==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:58694", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 09:31:19,537-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 09:31:19,538-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 09:31:21,543-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:21,645-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:21,746-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:21,847-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:21,949-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,051-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,151-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,253-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,355-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,457-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,558-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,660-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,761-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,863-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:22,965-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,066-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,169-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,270-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,371-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,473-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,575-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,676-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,777-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,878-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:23,979-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,081-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,182-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,283-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,385-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,486-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,588-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,689-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,791-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,892-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:24,993-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,095-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,196-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,298-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,400-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,501-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,602-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,704-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,805-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:25,907-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,008-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,110-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,211-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,313-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,414-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,515-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,616-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,718-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,818-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:26,920-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,021-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,123-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,225-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,326-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,427-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,529-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,631-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,733-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 09:31:27,821-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:53,337-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "ZWV4w4lOhKz2M0Qk/68khQ==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:59293", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 11:39:53,339-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 11:39:53,340-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 11:39:55,344-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:55,446-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:55,547-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:55,649-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:55,750-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:55,852-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:55,953-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,054-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,156-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,257-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,359-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,460-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,561-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,664-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,765-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,866-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:56,968-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,070-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,171-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,273-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,374-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,475-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,577-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,679-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,780-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,881-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:57,982-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,084-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,186-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,288-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,389-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,491-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,593-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,694-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,795-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,897-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:58,998-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,101-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,202-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,303-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,405-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,506-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,608-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,709-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,811-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:39:59,913-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,014-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,115-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,217-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,317-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,419-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,520-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,622-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,723-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,825-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:00,926-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,027-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,129-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,231-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,332-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,434-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,535-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:40:01,601-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:45,420-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "meQlJ1tV/G7fjl5MLN0m3g==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:59327", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 11:47:45,422-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 11:47:45,423-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 11:47:47,428-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:47,529-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:47,630-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:47,731-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:47,833-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:47,935-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,036-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,138-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,239-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,340-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,442-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,544-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,645-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,746-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,848-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:48,950-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,051-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,152-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,254-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,355-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,457-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,558-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,660-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,761-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,863-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:49,963-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,065-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,167-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,268-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,370-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,471-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,573-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,674-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,776-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,877-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:50,979-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,080-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,181-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,284-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,385-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,486-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,588-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,690-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,791-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,893-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:51,994-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,096-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,197-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,298-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,400-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,502-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,603-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,704-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,805-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:52,907-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,008-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,110-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,211-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,312-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,414-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,515-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,617-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,719-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,820-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:53,921-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,023-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,124-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,226-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,328-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,429-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,531-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,632-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,734-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,835-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:54,936-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:55,038-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:55,139-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:55,241-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:55,342-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:47:55,375-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:27,127-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "nln5lpiARTy2r6iq0+X86Q==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:59336", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 11:59:27,129-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 11:59:27,130-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 11:59:29,135-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,236-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,338-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,440-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,541-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,642-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,744-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,845-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:29,947-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,048-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,149-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,250-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,352-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,454-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,555-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,657-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,758-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,859-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:30,961-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,062-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,163-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,265-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,366-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,468-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,569-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,670-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,772-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,874-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:31,975-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,076-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,177-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,279-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,380-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,482-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,583-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,685-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,786-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,888-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:32,989-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,091-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,192-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,294-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,395-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,497-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,597-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,699-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,801-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:33,902-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,004-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,105-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,207-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,308-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,409-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,511-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,612-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,714-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,816-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:34,918-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,019-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,120-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,222-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,323-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,425-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,526-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,628-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,729-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,831-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:35,932-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,034-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,134-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,236-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,338-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,439-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,540-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,642-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,743-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,845-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:36,946-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:37,048-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:37,149-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:37,250-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:37,352-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:37,454-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 11:59:37,459-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:07,284-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "dyOKoPGF+tF42iE4lImIEA==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:59341", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 12:04:07,286-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 12:04:07,286-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 12:04:09,291-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:09,392-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:09,493-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:09,595-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:09,696-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:09,798-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:09,899-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,000-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,102-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,204-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,305-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,407-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,508-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,610-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,711-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,812-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:10,914-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,015-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,117-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,218-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,320-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,422-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,523-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:04:11,553-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:55,039-autobahn9000:-DEBUG: {"origin": null, "headers": {"upgrade": "WebSocket", "sec-websocket-version": "13", "connection": "Upgrade", "sec-websocket-key": "jR6LpfFYNzDwEzylMVEqOQ==", "user-agent": "AutobahnPython/0.8.12", "host": "192.168.1.37:9000", "pragma": "no-cache", "cache-control": "no-cache"}, "host": "192.168.1.37", "version": 13, "params": {"isFront": ["False"], "feed_id": ["53dde5e6a52633d704000003"], "format": ["video"]}, "extensions": [], "peer": "192.168.1.37:59346", "path": "/v1/websocket/", "protocols": []}
+2014-08-30 12:05:55,040-autobahn9000:-INFO: registered videoRobot,feed_id=53dde5e6a52633d704000003,total videoRobot NUM: 1 
+2014-08-30 12:05:55,040-autobahn9000:-DEBUG: onOpen() called,welcome aboard! checking... feed_id=53dde5e6a52633d704000003,format=video,isFront=false
+2014-08-30 12:05:57,044-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,145-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,247-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,349-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,450-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,551-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,653-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,755-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,856-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:57,958-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,059-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,161-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,262-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,364-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,465-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,566-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,668-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,769-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,871-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:58,972-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:59,074-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:59,175-autobahn9000:-DEBUG: onMessage() called from feed_id=53dde5e6a52633d704000003
+2014-08-30 12:05:59,200-autobahn9000:-INFO: unregistered VideoRobot,feed_id=53dde5e6a52633d704000003
